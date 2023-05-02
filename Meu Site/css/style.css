@@ -1,0 +1,93 @@
+:root{
+    --cabecalho: #37465B;
+    --menu: #212b38;
+    --aside: #726EFF;
+    --principal: #08C6AB;
+    --detalhes: #5AFFE7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main{
+    margin: auto;
+    max-width: 1100px;
+
+}
+
+header{
+    color: #fff;
+    text-align: center;
+    padding: 60px;
+    background-color: var(--cabecalho);
+}
+
+nav{
+    background-color: var(--menu);
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+article{
+    display: flex;
+}
+nav a:hover{
+    background-color: var(--detalhes);
+    color: var(--menu);
+}
+
+aside{
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 1px;
+    flex: 30%;
+}
+aside > h2, h3, h5, p{
+    margin: 5px;
+}    
+
+.Principal{
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin: 1px;
+    flex: 70%;
+}
+.Principal > h2, h3, h5, p{
+    margin: 5px;
+}    
+
+.fakeImagem{
+    background-color: var(--aside);
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+footer{
+    background-color: var(--cabecalho);
+    text-align: center;
+    padding: 20px;
+}
+footer > h2{
+    color: var(--detalhes);
+}
+footer > p{
+    color: #fff;
+}
+
+@media (max-width: 700px){
+    nav{flex-direction: column;}
+}
+@media (max-width:700px){
+   article{flex-direction: column;} 
+}
